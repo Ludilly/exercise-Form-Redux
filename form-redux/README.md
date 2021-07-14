@@ -15,7 +15,7 @@ Você vai precisar de:
 
 Então, mãos ao código!
 
-1 - Crie uma pasta chamada `pages`, e, dentro dela, 3 arquivos:
+**1 - Crie uma pasta chamada `pages`, e, dentro dela, 3 arquivos:**
 
 PersonalForm.jsx
 ProfessionalForm.jsx
@@ -25,13 +25,13 @@ _Se vocês quiserem utilizar a extensão .js, tudo bem, fiquem à vontade!_
 
 Não se preocupe com o conteúdo de cada uma delas, por enquanto renderize apenas uma `div` com um texto identificando cada uma das páginas.
 
-2 - Crie as rotas dentro de `App.js` para renderizar as páginas:
+**2 - Crie as rotas dentro de `App.js` para renderizar as páginas:**
 
 `PersonalForm` será renderizada na página principal, com a rota `'/'`.
 `ProfessionalForm` será renderizada ao acessar a rota `'/professionalForm'`.
 `FormDataDisplay` será renderizada ao acessar a rota `'/formDisplay'`.
 
-3 - Crie um `fieldset` que contenha os seguintes `inputs` e os renderize em `PersonalForm.js`:
+**3 - Crie um `fieldset` que contenha os seguintes `inputs` e os renderize em `PersonalForm.js`:**
 
 Nome - Texto
 Email - Texto
@@ -42,15 +42,14 @@ Estado - Select
 Todos os estados do Brasil
 Um botão com o texto `Enviar` e que redireciona para a página ProfessionalForm
 
-4 - Crie um `fieldset` que contenha os seguintes inputs e os renderize em `ProfessionalForm.js`:
+**4 - Crie um `fieldset` que contenha os seguintes inputs e os renderize em `ProfessionalForm.js`:**
 
 Resumo do currículo - TextArea
 Cargo - TextArea
 Descrição do cargo - Texto
 Um botão com o texto `Enviar` e que redireciona para a página FormDataDisplay
 
-
-5 - Crie um diretório chamado Redux:
+**5 - Crie um diretório chamado Redux:**
 
 Dentro da pasta "redux", crie as pastas "actions", "reducers" e "store".
 Dentro de "actions" crie um arquivo chamado `action.jsx`.
@@ -61,12 +60,11 @@ _Lembre-se que, ao montar a estrutura do Redux, é preciso importar o `Provider`
 
 **Dica: Caso esteja tendo dificuldades para montar a estrutura do Redux, você pode consultar o passo a passo que estão nesse [link!](https://app.betrybe.com/course/front-end/gerenciamento-de-estado-com-redux/usando-o-redux-no-react/a2dac445-434c-4690-83da-7ebef1aad2cd/conteudos/2036e927-303a-4846-a741-80dbe155266d/fluxo-de-dados-no-redux/f07a7c11-2049-4c2f-b514-3db84cb40ae7?use_case=side_bar)
 
-
-6 - Salve as informações das páginas `PersonalForm` e `ProfessionalForm` na `store`.
+**6 - Salve as informações das páginas `PersonalForm` e `ProfessionalForm` na `store`.**
 
 **Dica: Lembre-se que o `mapStateToProps` lê as informações da `store` e o `mapDispatchToProps` envia as informações para a `store`.**
 
-7 - Renderize, em `FormDataDisplay`, todas as informações que estão salvas na `store`.
+**7 - Renderize, em `FormDataDisplay`, todas as informações que estão salvas na `store`.**
 
 ---
 
@@ -80,7 +78,7 @@ Primeiramente, é necessário criar e inicializar a aplicação para que possamo
 
 Agora, precisamos analisar os exercícios:
 
-**1 - Crie uma pasta chamada pages, e, dentro dela, 3 arquivos:**
+## **1 - Crie uma pasta chamada pages, e, dentro dela, 3 arquivos:**
 
 * PersonalForm.jsx
 * ProfessionalForm.jsx
@@ -92,7 +90,7 @@ Não se preocupe com o conteúdo de cada uma delas, por enquanto renderize apena
 
 Então vamos lá!
 
-### Resolução exercício 1:
+## Resolução exercício 1:
 
 Precisamos criar cada uma das páginas dentro de uma pasta chamada `pages`. Essa pasta ficará dentro de `src` e como pede para não nos preocuparmos, por enquanto, com o conteúdo, vamos colocar apenas um texto com o nome da página.
 
@@ -110,13 +108,13 @@ Precisamos criar cada uma das páginas dentro de uma pasta chamada `pages`. Essa
 
 Com as páginas criadas, precisamos testar para ver se estão funcionando, sendo assim, podemos seguir para o exercício 2, que pede para criarmos as rotas.
 
-**2 - Crie as rotas dentro de `App.js` para renderizar as páginas:**
+## **2 - Crie as rotas dentro de `App.js` para renderizar as páginas:**
 
 * `PersonalForm` será renderizada na página principal, com a rota `'/'`.
 * `ProfessionalForm` será renderizada ao acessar a rota `'/professionalform'`.
 * `FormDataDisplay` será renderizada ao acessar a rota `'/formdisplay'`.
 
-### Resolução exercício 2:
+## Resolução exercício 2:
 Aqui vamos passar o nosso componente App.js para classe, mantendo o padrão do nosso código e agora que temos nossa estrutura de páginas pronta, podemos partir para o próximo passo, a criação das rotas! Mas antes, é necessário instalar o `react-router-dom` com o comando: `npm install react-router-dom`
 
 Precisamos importar o `BrowserRouter`, o `Route` e o `Switch` e renderizar a página para cada uma das rotas.
@@ -126,7 +124,7 @@ Precisamos importar o `BrowserRouter`, o `Route` e o `Switch` e renderizar a pá
 
 Teste as rotas para ver se estão renderizando o conteúdo correto e então, vamos partir para o exercício 3!
 
-**3 - Crie um `fieldset` que contenha os seguintes inputs e os renderize em `PersonalForm.jsx`:**
+## **3 - Crie um `fieldset` que contenha os seguintes inputs e os renderize em `PersonalForm.jsx`:**
 
 * Nome - Texto
 * Email - Texto
@@ -137,7 +135,7 @@ Teste as rotas para ver se estão renderizando o conteúdo correto e então, vam
 * Todos os estados do Brasil
 * Um botão com o texto Enviar e que redireciona para a página ProfessionalForm
 
-### Resolução exercício 3:
+## Resolução exercício 3:
 
 Agora, precisamos renderizar os componentes dentro de `PersonalForms`. Analisando o formulário precisamos de um input para o `nome`, `email`, `CPF`, `endereço` e `cidade`. Como esses inputs possuem a mesma estrutura, podemos fazer o que?
 
@@ -235,13 +233,13 @@ export default PersonalForm;
 ```
 O quarto exercício pede para criarmos outro `fieldset`, mas agora em `ProfessionalForm`.
 
-**4 - Crie um `fieldset` que contenha os seguintes inputs e os renderize em `ProfessionalForm.jsx`:**
+## **4 - Crie um `fieldset` que contenha os seguintes inputs e os renderize em `ProfessionalForm.jsx`:**
 
 * Resumo do currículo - TextArea
 * Cargo - TextArea
 * Descrição do cargo - Texto
 
-### Resolução exercício 4:
+## Resolução exercício 4:
 
 Observando bem, temos dois componentes com a mesma estrutura, o `Resumo do currículo` e o `Cargo` vão ser `textarea`, ou seja...
 
@@ -266,7 +264,7 @@ Feita a instalação, vamos para o que interessa, O CÓDIGO!
 
 O exercício 5 diz:
 
-**5 - Crie um diretório chamado `Redux`:**
+## **5 - Crie um diretório chamado `Redux`:**
 
 * Dentro da pasta "redux", crie as pastas "actions", "reducers" e "store".
 * Dentro de "actions" crie um arquivo chamado `action.js`.
@@ -275,7 +273,7 @@ O exercício 5 diz:
 
 **Lembre-se que, ao montar a estrutura do Redux, é preciso importar o Provider, que recebe a store, no index.js.**
 
-### Resolução exercício 5:
+## Resolução exercício 5:
 
 Primeiro, vamos montar a estrutura do Redux e aos poucos vamos complementando com as informações necessárias.
 
@@ -333,11 +331,11 @@ Não podemos esquecer agora do nosso `reducer`:
 
 Pronto, toda a estrutura do nosso `Redux` está pronta, agora precisamos capturar os estados das nossas páginas `PersonalForm` e `ProfessionalForm`, salvá-las na `store`. Ao acessar a página `FormDataDisplay`, precisamos recuperar essas informações da `store` e exibí-las na tela, como pede o exercício 6:
 
-**6 - Salve as informações das páginas `PersonalForm` e `ProfessionalForm` na `store`.**
+## **6 - Salve as informações das páginas `PersonalForm` e `ProfessionalForm` na `store`.**
 
 **_Dica: Lembre-se que o `mapStateToProps` lê as informações da `store` e o `mapDispatchToProps` envia as informações para a `store`._**
 
-### Resolução exercício 6:
+## Resolução exercício 6:
 
 No componente PersonalForm, vamos importar a função responsável por despachar a `action` que vai carregar o type `SET_PERSONAL_VALUE`, a função que retorna essa `action` está dentro do arquivo `action.js` e é chamada `setPersonalValue`.
 
@@ -358,7 +356,7 @@ Vamos fazer praticamente a mesma coisa na `ProfessionalForm`, mas importando a f
 
 E por último, o exercício 7! \o\
 
-**7 - Renderize, em `FormDataDisplay`, todas as informações que estão salvas na `store`.**
+## **7 - Renderize, em `FormDataDisplay`, todas as informações que estão salvas na `store`.**
 
 ## Resolução exercício 7:
 
