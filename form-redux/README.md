@@ -152,6 +152,7 @@ Dentro de `src` vamos criar a pasta `components` e dentro dela, os nossos compon
 * Componente Select
 
 ![Select component](./images/selectComponent.png)
+
 ![Select proptypes](./images/selectProptypes.png)
 
 * Componente Button
