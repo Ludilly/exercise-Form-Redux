@@ -14,9 +14,12 @@ class ProfessionalForm extends Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(event) {
+  handleChange({ target: { value, name } }) {
     const { dispatchSetValue } = this.props;
-    dispatchSetValue(event.target);
+    dispatchSetValue({
+      value,
+      name,
+    });
   }
 
   render() {
